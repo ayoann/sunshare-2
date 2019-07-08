@@ -1,29 +1,6 @@
 <template>
   <v-layout row wrap>
-    <Test />
-      <v-flex xs6 sm6>
-        <v-card>
-          <chartist
-            ratio="ct-major-second"
-            type="Line"
-            :data="chartData"
-            :options="chartOptions" >
-          </chartist>
-
-          <v-card-title primary-title>
-            <div>
-              <div class="headline">Top western road trips</div>
-              <span class="grey--text">1,000 miles of wonder</span>
-            </div>
-          </v-card-title>
-
-          <v-card-actions>
-            <v-btn flat>Share</v-btn>
-            <v-btn flat color="purple">Explore</v-btn>
-            <v-spacer></v-spacer>
-          </v-card-actions>
-        </v-card>
-      </v-flex>
+    <Test/>
       <v-flex xs6 sm6>
         <v-card>
           <v-img
@@ -78,16 +55,6 @@
 
     export default {
       layout: 'default',
-      data: () => ({
-        conso: [123, 12355, 1345],
-        chartData: {
-          labels: ["A", "B", "C"],
-          series:[[1, 3, 2], [4, 6, 5]]
-        },
-        chartOptions: {
-          // lineSmooth: false
-        }
-      }),
       // Méthode au chargement de la vue
       async mounted() {
         // this.conso = await this.$axios.$get('https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22')
