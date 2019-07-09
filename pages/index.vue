@@ -1,57 +1,17 @@
 <template>
   <v-layout row wrap>
-    <Test/>
-      <v-flex xs6 sm6>
-        <v-card>
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-            height="200px"
-          >
-          </v-img>
-
-          <v-card-title primary-title>
-            <div>
-              <div class="headline">Top western road trips</div>
-              <span class="grey--text">1,000 miles of wonder</span>
-            </div>
-          </v-card-title>
-
-          <v-card-actions>
-            <v-btn flat @click="x">Share</v-btn>
-            <v-btn flat color="purple">Explore</v-btn>
-            <v-spacer></v-spacer>
-          </v-card-actions>
-        </v-card>
-      </v-flex>
-    <v-flex xs6 sm6>
-      <v-card>
-        <v-img
-          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-          height="200px"
-        >
-        </v-img>
-
-        <v-card-title primary-title>
-          <div>
-            <div class="headline">Top western road trips</div>
-            <span class="grey--text">1,000 miles of wonder</span>
-          </div>
-        </v-card-title>
-
-        <v-card-actions>
-          <v-btn flat @click="x">Share</v-btn>
-          <v-btn flat color="purple">Explore</v-btn>
-          <v-spacer></v-spacer>
-        </v-card-actions>
-      </v-card>
+    <v-flex>
+      <Test/>
+      <Charts/>
+      <Measures/>
     </v-flex>
   </v-layout>
-
-
 </template>
 
 <script>
     import Test from '@/components/Test'
+    import Measures from '@/components/Measures'
+    import Charts from '@/components/Charts'
 
     export default {
       layout: 'default',
@@ -67,7 +27,11 @@
           console.log('coucou');
         }
       },
-      components: {Test}
+      components: {
+        Test,
+        Measures,
+        Charts
+      }
     }
 </script>
 

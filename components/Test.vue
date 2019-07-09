@@ -1,61 +1,15 @@
 <template>
-    <v-flex xs12 sm12>
-        <v-card>
+    <v-layout row wrap>
+        <v-flex xs12 sm12>
             <div class="weather">
-                <chartist
-                        ratio="ct-major-second"
-                        type="Line"
-                        :data="chartData"
-                        :options="chartOptions" >
-                </chartist>
-
-                <v-card-title primary-title>
-                    <div>
-                        <div class="headline">Top western road trips</div>
-                        <span class="grey--text">1,000 miles of wonder</span>
-                    </div>
-                </v-card-title>
+                <div id="cont_ceb11955a99211c612a32e609f0e8ecd"><script type="text/javascript" async src="https://www.tameteo.com/wid_loader/ceb11955a99211c612a32e609f0e8ecd"></script></div>
             </div>
-        </v-card>
-    </v-flex>
+        </v-flex>
+    </v-layout>
 </template>
 
 <script>
-    export default {
-        name: "Test",
-        data: () => ({
-        conso: [123, 12355, 1345],
-        chartData: {
-            labels: ["A", "B", "C"],
-            series:[[1, 3, 2], [4, 6, 5]]
-        },
-        chartOptions: {
-            // lineSmooth: false
-        }
-    }),
-    async mounted() {
-        const MongoClient = require('mongodb').MongoClient;
 
-        const uri = "mongodb+srv://stagiaire:7qN6W4sbqJUpds5k@sunshare-i1u0f.mongodb.net/sunshare?retryWrites=true&w=majority";
-
-        const client = new MongoClient(uri, { useNewUrlParser: true });
-
-        client.connect(err => {
-            const collection = client.db("sunshare").collection("sunshare");
-// perform actions on the collection object
-        client.close();
-    });
-
-
-
-
-
-        //this.conso = await this.$axios.$get('mongodb+srv://stagiaire:7qN6W4sbqJUpds5k@sunshare-i1u0f.mongodb.net/sunshare?retryWrites=true&w=majority')
-        //const client = await mongodb
-
-        console.log(this.conso);
-    }
-    }
 </script>
 
 <style scoped>

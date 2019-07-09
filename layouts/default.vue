@@ -1,12 +1,10 @@
 <template>
   <v-app>
-    <v-toolbar>
-      <v-spacer></v-spacer>
-
-      <!--<v-toolbar-items>-->
-        <!--<v-btn flat @click="redirect('/login')">login</v-btn>-->
-        <!--<v-btn flat @click="redirect('/register')">register</v-btn>-->
-      <!--</v-toolbar-items>-->
+    <v-toolbar class="navBar">
+      <img>
+        <img class="image" src="../static/logo.png"/>
+        <span class="text"><a href="https://www.sunshare.fr/" target="_blank">Info Sunshare</a></span>
+      </v-spacer>
     </v-toolbar>
     <v-container fluid>
       <nuxt/>
@@ -24,3 +22,15 @@
     // }
   }
 </script>
+
+<style>
+  .navBar{
+    color: #efdd84;
+  }
+  .image{
+    width: 5%;
+  }
+  .text{
+    margin-left: 85%;
+  }
+</style>
