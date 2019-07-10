@@ -1,26 +1,13 @@
 <template>
     <v-layout row wrap>
-            <v-flex xs6 sm6>
+            <v-flex xs12 sm12>
                 <div class="measure1">
                     <v-card>
-                        <v-card-title primary-title>
-                            <div>
-                                <div class="headline">Top western road trips</div>
-                                <span class="grey--text">1,000 miles of wonder</span>
-                            </div>
-                        </v-card-title>
-                    </v-card>
-                </div>
-            </v-flex>
-            <v-flex xs6 sm6>
-                <div class="measure2">
-                    <v-card>
-                        <v-card-title primary-title>
-                            <div>
-                                <div class="headline">Top western road trips</div>
-                                <span class="grey--text">1,000 miles of wonder</span>
-                            </div>
-                        </v-card-title>
+                        <div class="index">Index</div>
+                        <div class="headline">Soutir</div>
+                        <div class="headline">Production</div>
+                        <div class="headline">Inject</div>
+                        <div class="headline">Conso</div>
                     </v-card>
                 </div>
             </v-flex>
@@ -34,10 +21,14 @@
 <style scoped>
     .measure1{
         margin-top: 30px;
-        margin-right: 30px;
     }
-    .measure2{
-        margin-top: 30px;
-        margin-left: 30px;
+    .index{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .headline{
+        padding-bottom: 30px;
+        padding-left: 20px;
     }
 </style>

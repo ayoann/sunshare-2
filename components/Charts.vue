@@ -3,7 +3,7 @@
         <v-flex xs6 sm6>
             <div class="card1">
                 <v-card>
-                    <canvas ref="chart"></canvas>
+                    <canvas id="myChart" ref="chart"></canvas>
                 </v-card>
             </div>
         </v-flex>
@@ -28,10 +28,10 @@
             var myChart = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: ["01:00", "01:15", "01:30", "01:45", "02:00", "02:15"],
+                    labels: ["15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30"],
                     datasets: [{
-                        label: 'Production',
-                        data: [126, -19, 300, 50, 286, 31],
+                        label: 'Inject',
+                        data: [345, 404, 300, 320, 349, 400, 300, 315, 415, 288, 301, 360],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
@@ -50,13 +50,23 @@
                         ],
                         borderWidth: 1
                     }, {
-                        label: 'Consommation',
-                        data: [50, 50, 50, 50],
+                        label: 'Soutir',
+                        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                         backgroundColor: [
                             'rgba(255, 159, 64, 0.2)'
                         ],
                         borderColor: [
                             'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }, {
+                        label: 'Autoconso',
+                        data: [288, 349, 519, 500, 340, 350, 280, 404, 540, 380, 310],
+                        backgroundColor: [
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 159, 64, 0.2)'
                         ],
                         borderWidth: 1
                     }]
@@ -77,10 +87,10 @@
             var myChart2 = new Chart(ctx2, {
                 type: 'line',
                 data: {
-                    labels: ["01:00", "01:15", "01:30", "01:45", "02:00", "02:15"],
+                    labels: ["15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30"],
                     datasets: [{
                         label: 'Production',
-                        data: [126, -19, 300, 50, 286, 31],
+                        data: [748, 800, 850, 730, 700, 631, 640, 750, 810, 735, 820],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
@@ -100,7 +110,7 @@
                         borderWidth: 1
                     }, {
                         label: 'Consommation',
-                        data: [50, 50, 50, 50],
+                        data: [288, 300, 500, 519, 320, 404, 280, 490, 315, 290, 300],
                         backgroundColor: [
                             'rgba(255, 159, 64, 0.2)'
                         ],
