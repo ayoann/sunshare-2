@@ -28,9 +28,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    { src: '~/plugins/chartist.js', ssr: false }
-  ],
+  plugins: [],
   /*
   ** Nuxt.js modules
   */

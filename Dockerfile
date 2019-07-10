@@ -31,4 +31,4 @@ RUN npm install
 
 # Cette commande permet de lancer la commande "start"
 # de notre fichier package.json
-CMD ["npm", "start", "dev"]
+CMD ["npm", "run", "dev"]

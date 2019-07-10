@@ -1,7 +1,7 @@
 <template>
     <v-layout row wrap>
         <v-flex xs12 sm12>
-            Mardi 8 Juillet 2019
+            Jeudi 11 Juillet 2019
         </v-flex>
         <v-flex xs12 sm12>
             <div class="weather">
